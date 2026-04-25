@@ -21,7 +21,14 @@ It fetches real-time weather data and stores it in a CSV file.
 - Requests library
 - OpenWeather API
 - CSV module
+- 
+## 🧠 Concepts Used
 
+- API Integration (OpenWeather)
+- JSON Parsing
+- Error Handling
+- File Handling (CSV)
+- CLI Interaction
 ## ▶️ How to Run
 
 1. Install dependencies:
