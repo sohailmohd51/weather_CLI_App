@@ -6,7 +6,7 @@ import csv
 while True :
 	
 
-	api_key = "00f51c186a14e6aacea2412f3e749e0d"
+	api_key = "YOUR_API_KEY"
 
 	city = input('Enter City Name : ')
 	if city == "exit":
