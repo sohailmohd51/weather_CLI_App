@@ -1,7 +1,14 @@
-City,lat Long,Temp,Condition,feel like,Min Temp,Max Temp,Humidity,Visibility,wind_speed,Country
-Bhopal,"{'lon': 77.4, 'lat': 23.2667}",41.13,clear sky,37.36,41.13,41.13,6,6000,4.12,IN
-Saugor,"{'lon': 78.7167, 'lat': 23.8333}",40.96,clear sky,37.74,40.96,40.96,9,10000,3.46,IN
-Delhi,"{'lon': 77.2167, 'lat': 28.6667}",41.05,scattered clouds,39.58,41.05,41.05,16,3.6,IN,
-Ahmedabad,"{'lon': 72.6167, 'lat': 23.0333}",40.02,clear sky,38.54,40.02,40.02,17,3.09,IN,
-Mumbai,"{'lon': 72.8479, 'lat': 19.0144}",35.99,smoke,40.6,32.94,35.99,44,5.66,IN,
-Kolkata,"{'lon': 88.3697, 'lat': 22.5697}",35.97,haze,42.97,35.97,35.97,59,6.17,IN,
+City,lattitude,longitude,Temp,Condition,feel like,Min Temp,Max Temp,Humidity,Visibility,wind_speed,Country
+Jaipur,26.9167,75.8167,40.62,haze,39.03,40.62,40.62,16,5000,3.6,IN
+Bhopal,23.2667,77.4,41.33,clear sky,38.09,41.33,41.33,9,10000,3.91,IN
+Bhopal,23.2667,77.4,41.33,clear sky,38.09,41.33,41.33,9,10000,3.91,IN
+Saugor,23.8333,78.7167,40.74,clear sky,37.53,40.74,40.74,9,10000,3.47,IN
+Delhi,28.6667,77.2167,42.05,scattered clouds,40.53,42.05,42.05,15,6000,4.12,IN
+Mumbai,19.0144,72.8479,34.99,smoke,41.45,31.94,34.99,52,4000,6.17,IN
+Damoh,23.8333,79.45,41.97,clear sky,38.47,41.97,41.97,8,10000,1.4,IN
+New York,40.7143,-74.006,8.72,overcast clouds,5.25,7.37,9.63,71,10000,7.15,US
+Washington D.C.,38.8951,-77.0364,12.56,broken clouds,12.06,11.44,13.38,84,10000,4.12,US
+Ahmedabad,23.0333,72.6167,41.02,clear sky,39.85,41.02,41.02,17,6000,4.12,IN
+Jaisalmer,26.9147,70.9181,42.05,clear sky,39.89,42.05,42.05,13,10000,3.74,IN
+Raisen,23.3333,77.8,41.53,clear sky,38.51,41.53,41.53,10,10000,2.28,IN
+Katni,23.8344,80.3893,41.96,clear sky,38.47,41.96,41.96,8,10000,3.65,IN

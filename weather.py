@@ -8,7 +8,7 @@ while True :
 
 	api_key = "YOUR_API_KEY"
 
-	city = input('Enter City Name : ')
+	city = input('Enter City Name or "exit" for close the app : ')
 	if city == "exit":
 		print("App Quit !")
 		break
@@ -26,7 +26,8 @@ while True :
 		exit()
 
 	city = data["name"]
-	lat_Long = data["coord"]
+	lat = data["coord"]["lat"]
+	long = data["coord"]["lon"]
 	temprature = data["main"]["temp"]
 	weather_Condition = data["weather"][0]["description"]
 	feels_like = data["main"]["feels_like"]
@@ -37,11 +38,11 @@ while True :
 	wind_speed = data["wind"]["speed"]
 	country = data["sys"]["country"]
 
-	row = [city, lat_Long, temprature, weather_Condition, feels_like, min_temp, max_temp, humidity, wind_speed, country]
+	row = [city, lat, long, temprature, weather_Condition, feels_like, min_temp, max_temp, humidity, visibility, wind_speed, country]
 	
 	print("\n--- Weather Report ---")
 	print(f'City Name : {city}')
-	print(f'Coordinates : {lat_Long}')
+	print(f'Coordinates : {lat}, {long}')
 	print(f'Temprature : {temprature} °C')
 	print(f'Weather Condition : {weather_Condition}')
 	print(f'Feels like : {feels_like} °C')
