@@ -52,6 +52,7 @@ while True :
 	print(f'Wind-Speed : {wind_speed}, m/s')
 	print(f'Country : {country}')
 
+	# Saving City Data in to the csv file
 	with open("weather-data.csv", "a", newline="") as file:
 		writer = csv.writer(file)
 		writer.writerow(row)
