@@ -19,7 +19,7 @@ while True :
 
 	data = response.json()
 
-	print (json.dumps(data, indent=4))
+	#print (json.dumps(data, indent=4))
 	
 	if data["cod"] != 200:
 		print ('City Not Found.')
