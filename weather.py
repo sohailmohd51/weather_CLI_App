@@ -6,7 +6,7 @@ import csv
 while True :
 	
 
-	api_key = "YOUR_API_KEY"
+	api_key = "00f51c186a14e6aacea2412f3e749e0d"
 
 	city = input('Enter City Name or "exit" for close the app : ')
 	if city == "exit":
@@ -27,7 +27,7 @@ while True :
 
 	city = data["name"]
 	lat = data["coord"]["lat"]
-	long = data["coord"]["lon"]
+	lon = data["coord"]["lon"]
 	temprature = data["main"]["temp"]
 	weather_Condition = data["weather"][0]["description"]
 	feels_like = data["main"]["feels_like"]
@@ -38,11 +38,11 @@ while True :
 	wind_speed = data["wind"]["speed"]
 	country = data["sys"]["country"]
 
-	row = [city, lat, long, temprature, weather_Condition, feels_like, min_temp, max_temp, humidity, visibility, wind_speed, country]
+	row = [city, lat, lon, temprature, weather_Condition, feels_like, min_temp, max_temp, humidity, visibility, wind_speed, country]
 	
 	print("\n--- Weather Report ---")
 	print(f'City Name : {city}')
-	print(f'Coordinates : {lat}, {long}')
+	print(f'Coordinates : {lat}, {lon}')
 	print(f'Temprature : {temprature} °C')
 	print(f'Weather Condition : {weather_Condition}')
 	print(f'Feels like : {feels_like} °C')
@@ -53,10 +53,14 @@ while True :
 	print(f'Wind-Speed : {wind_speed}, m/s')
 	print(f'Country : {country}')
 
+
 	# Saving City Data in to the csv file
-	with open("weather-data.csv", "a", newline="") as file:
-		writer = csv.writer(file)
-		writer.writerow(row)
+	add = input("Do want to save the city data in csv file. ? (y/n)")
+	if add == "y":
+		with open("weather-data.csv", "a", newline="") as file:
+			writer = csv.writer(file)
+			writer.writerow(row)
+			print('City Data saved successfully ..!')
 	
 	
 	
