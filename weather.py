@@ -28,7 +28,7 @@ while True :
 	city = data["name"]
 	lat = data["coord"]["lat"]
 	lon = data["coord"]["lon"]
-	temprature = data["main"]["temp"]
+	temperature = data["main"]["temp"]
 	weather_Condition = data["weather"][0]["description"]
 	feels_like = data["main"]["feels_like"]
 	min_temp = data["main"]["temp_min"]
@@ -38,12 +38,12 @@ while True :
 	wind_speed = data["wind"]["speed"]
 	country = data["sys"]["country"]
 
-	row = [city, lat, lon, temprature, weather_Condition, feels_like, min_temp, max_temp, humidity, visibility, wind_speed, country]
+	row = [city, lat, lon, temperature, weather_Condition, feels_like, min_temp, max_temp, humidity, visibility, wind_speed, country]
 	
 	print("\n--- Weather Report ---")
 	print(f'City Name : {city}')
 	print(f'Coordinates : {lat}, {lon}')
-	print(f'Temprature : {temprature} °C')
+	print(f'temperature : {temperature} °C')
 	print(f'Weather Condition : {weather_Condition}')
 	print(f'Feels like : {feels_like} °C')
 	print(f'Min-Temp : {min_temp} °C')
